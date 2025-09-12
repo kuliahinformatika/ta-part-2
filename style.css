@@ -1,4 +1,28 @@
 * {
-    margin:0
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.main-container-navbar{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav {
+    justify-content: space-around;
+    display: flex;
+    background-color: antiquewhite;
 }
