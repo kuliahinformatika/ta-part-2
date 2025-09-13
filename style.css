@@ -50,22 +50,23 @@ nav ul li a:hover{
 }
 
 .burger div{
+    display: block;
     width: 28px;
     height: 3px;
-    background-color:black;
-    margin: 7px;
-    z-index: 99;
-    transition: all 0.3s;
-    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    background-color: black;
+    border: 3px;
+
 }
 
 .burger {
-    display: block;
-    z-index: 99;
-    position: fixed;
-    top: 33px;
-    right: 35px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+  
+    
 }
 
 /* ukuran tablet */
