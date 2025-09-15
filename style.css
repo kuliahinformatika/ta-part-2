@@ -11,18 +11,20 @@ body {
 }
 
 .main-container-navbar{
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+  background-color: antiquewhite;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 50px;
+  align-items: center;
+  
 }
 
-.nav {
-    justify-content: space-around;
-    display: flex;
-    background-color: antiquewhite;
-    /* padding: 25px 0; */
-    align-items: center;
-    height:73px;
-    
+.logo a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -42,31 +44,40 @@ nav ul li a:hover{
     color: brown;
 }
 
-.logo a{
-    text-decoration: none;
-    color: brown;
-    font-weight: bold;
-    letter-spacing: 2px;
+/* burger */
+nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
-.burger div{
-    display: block;
-    width: 28px;
-    height: 3px;
-    justify-content: space-between;
-    border-radius: 3px;
-    background-color: black;
-    border: 3px;
-
+nav .menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -4px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999;
 }
-
-.burger {
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-  
-    
+nav .menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(234, 192, 255);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 /* ukuran tablet */
@@ -74,13 +85,14 @@ nav ul li a:hover{
     nav ul {
         width: 50%;
     }
+    
 }
 
 @media screen and (max-width: 576px){
-    nav ul {
-        display: none;
-    }
-    
+    .menu-toggle {
+    display: flex;
+  }
+
     .logo {
     flex: 1;
     text-align: center;
