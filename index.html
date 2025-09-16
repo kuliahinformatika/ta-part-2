@@ -1,68 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Murodalhakim</title>
-  </head>
-  <body>
-    <header>
-      <div class="main-container-navbar">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+    <div class="logo">
+        <h4>Murodalhakim</h4>
+    </div>
 
-          <div class="logo">
-            <a href="#">Murodalhakim</a>
-          </div>
+    <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="/resume.pdf" target="_blank">Resume</a></li>
+    </ul>
 
-          <nav>
-            <ul>
-              <li><a href="#portfolios">Portfolio</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="/resume.pdf" target="_blank">Resume</a></li>
-            </ul>
+    <div class="menu-toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
 
-            <div class="menu-toggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-          </nav>
-        
-
-      </div>
-
-    </header>
-
-    <main class="main">
-        <div class="main-jumbotron">
-
-            <div class="home_container">
-
-                <div class="home_data">
-                    <h3 class="home_data sapa">Hello lurd</h3>
-                    <h1 class="home_data nama">Murodalhakim</h1>
-                </div>
-
-                <div class="home_image">
-                    <h3 class="home_image blob"></h3>
-                    <img src="" alt="murodalhakim" class="home_image profil">
-                </div>
-
-                <div class="home_info">
-                    <h3 class="home_info split">Creative</h3>
-                    <!-- insert profession, short text -->
-                    <h2 class="home_info profession-1">Developer</h2>
-                    <h2 class="home_info profession-2">& Designer</h2>
-                </div>
-
-
-            </div>
-        </div>
-
-    </main>
-  </body>
+    <script src="scripts.js"></script>
+</body>
 </html>
