@@ -12,12 +12,12 @@ body {
 
 .main-container-navbar{
     display: flex;
-  background-color: antiquewhite;
-  justify-content: space-around;
+    background-color: antiquewhite;
+    justify-content: space-around;
   /* padding: 20px 0; */
-  height: 50px;
-  align-items: center;
-  
+    height: 60px;
+    align-items: center;
+
 }
 
 .logo a{
@@ -57,8 +57,8 @@ nav .menu-toggle input {
   position: absolute;
   width: 40px;
   height: 28px;
-  left: -6px;
-  top: -4px;
+  left: -5px;
+  top: -3px;
   cursor: pointer;
   opacity: 0;
   z-index: 999;
@@ -67,7 +67,7 @@ nav .menu-toggle span {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: rgb(234, 192, 255);
+  background-color: brown;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -80,21 +80,61 @@ nav .menu-toggle span {
   -o-transition: all 0.5s;
 }
 
+/* berger menu animation */
+
+
+/* baris berger pertama */
+.menu-toggle span:nth-child(2){
+    /* background-color: black; */
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    /* background-color: red; */
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+
+/* baris berger kedua */
+.menu-toggle input:checked ~ span:nth-child(3) {
+    /* background-color: orange */
+    transform: scale(0);
+    opacity:0;
+}
+
+/* baris berger terakhir */
+.menu-toggle span:nth-child(4){
+    /* background-color: black; */
+    transform-origin: 0 100%;
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    /* background-color: orange */
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+
 /* ukuran tablet */
 @media screen and (max-width:768px){
     nav ul {
         width: 50%;
     }
     
+    
 }
 
+/* ukuran mobile */
 @media screen and (max-width: 576px){
-    .menu-toggle {
+    nav ul {
+        display: none;
+    }
+    nav .menu-toggle {
     display: flex;
-  }
+}
 
-    .logo {
-    flex: 1;
-    text-align: center;
-  }
+    
+
 }
