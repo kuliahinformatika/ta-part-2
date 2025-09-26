@@ -41,6 +41,7 @@ nav {
 nav .logo {
     font-family: "Pacifico", cursive;
     letter-spacing: 3px;
+    font-size: 0.6em;
 }
 
 nav ul {
@@ -274,7 +275,7 @@ section.about {
     /*membagi dua rata (gambar 50% teks 50%) */
 }
 
-.img-about {
+.about-img {
     flex: 1;
     /* isi setengah bagian */
     display: flex;
@@ -290,7 +291,7 @@ section.about {
     /* biar gambar rapi dan nggak gepeng */
 }
 
-.abouti {
+.about-content {
     flex: 1;
     /* isi setengah bagian */
     padding: 2rem;
@@ -300,15 +301,15 @@ section.about {
     justify-content: center;
 }
 
-.abouti h3 {
+.about-content h3 {
     font-size: 2.9em;
 }
 
-.abouti h2 {
+.about-content h2 {
     font-size: 3em;
 }
 
-.abouti p {
+.about-content p {
     font-size: 1.5em;
 }
 
